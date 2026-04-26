@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Basics Lab</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #f0c040;
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2e2e2e;
+      border-left: 4px solid #f0c040;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #f0c040;
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      line-height: 2;
+      font-size: 0.92rem;
+      color: #ccc;
+    }
+
+    strong {
+      color: #6ee7b7;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f0c04022;
+      color: #f0c040;
+      border: 1px solid #f0c04055;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #444;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Basics Lab</h1>
+  <p class="subtitle">Variables · Data Types · Operators</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <span class="badge">Step 2</span>
+      <h2>Variables (var / let / const)</h2>
+      <p id="var-output">Loading...</p>
+    </div>
+
+    <div class="card">
+      <span class="badge">Step 3</span>
+      <h2>Data Types & typeof</h2>
+      <p id="type-output">Loading...</p>
+    </div>
+
+    <div class="card">
+      <span class="badge">Step 4.1</span>
+      <h2>Arithmetic Operators</h2>
+      <p id="arith-output">Loading...</p>
+    </div>
+
+    <div class="card">
+      <span class="badge">Step 4.2</span>
+      <h2>Comparison & Logical Operators</h2>
+      <p id="logic-output">Loading...</p>
+    </div>
+
+  </div>
+
+  <footer>Open DevTools Console (F12) to see all console.log outputs.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
